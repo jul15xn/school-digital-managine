@@ -61,7 +61,7 @@ main, article{
     border-radius: 20px;
     text-align: center;
     box-shadow: 0px 0px 5px;
-    padding: 0px 10px 10px; /* extra 10px voor bottom zodat de bodem padding net zo breet is als aan de zijkanten */
+    padding: 5px 10px 10px; /* extra 10px voor bottom zodat de bodem padding net zo breet is als aan de zijkanten */
 }
 main::after {  /* van chatgpt*/
     content: "";
@@ -120,7 +120,7 @@ hr{
 @media only screen and (max-width: 600px){
     main{
         width: 90%;
-        padding: 0px 0px 10px;
+        padding: 5px 0px 10px;
     }
     main div, main#tutorial div{
         margin: 10px 7.5% ; /* waar 7.5% weet ik niet */

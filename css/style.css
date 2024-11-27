@@ -52,7 +52,7 @@ main img{
     border-radius: 15px;
 }
 
-main{
+main, article{
     background-color: #f3f3f3;
     width: 70%;
     margin: 25px auto;
@@ -78,4 +78,20 @@ main li a{
 }
 h2{
     margin: 10px;
+}
+
+main h2 {
+    font-size: 36px;
+}
+
+article p, article pre {
+    margin: 0px 75px;
+}
+
+article pre {
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    overflow: hidden;
 }

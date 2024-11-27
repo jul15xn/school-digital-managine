@@ -58,3 +58,17 @@ main img{
     border-radius: 15px;
 }
 
+main{
+    background-color: #f3f3f3;
+    width: 70%;
+    margin: 25px auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 5px;
+}
+h2{
+    margin: 10px;
+}

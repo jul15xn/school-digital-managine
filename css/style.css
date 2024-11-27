@@ -48,14 +48,12 @@ header h1 {
 .navbar li{
     float: left;
 }
-head,  style { /* voor de css editen op de html pagina dus kan weg*/
-    display: block;
-}
 style { /* voor de css editen op de html pagina dus kan weg*/
+    display: block;
     text-align: left;
     font-family: monospace;
     white-space: pre;
-  }
+}
 main img{
     border-radius: 15px;
 }

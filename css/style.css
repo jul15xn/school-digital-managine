@@ -31,7 +31,7 @@ header h1 {
     overflow: hidden;
 }
 .navbar li{
-    width: calc(100% / 4); /* berekent de breete(handig als je bijvoorbeeld drie list items heb die naast elkaar moetten */
+    width: calc(100% / 3); /* berekent de breete(handig als je bijvoorbeeld drie list items heb die naast elkaar moetten */
 }
 .navbar a{
     color: white;

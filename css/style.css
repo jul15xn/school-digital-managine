@@ -60,7 +60,7 @@ main, article{
     margin-right: auto;
     border-radius: 20px;
     text-align: center;
-    box-shadow: 0px 0px 5px;
+    box-shadow: 0px 0px 5px; /* we kunnen dit ook nog 5px 55px 5px(beetje naar onder en naar rechts in plaats op 0 0 */
     padding: 5px 10px 10px; /* extra 10px voor bottom zodat de bodem padding net zo breet is als aan de zijkanten */
 }
 main::after {  /* van chatgpt*/

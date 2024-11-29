@@ -112,6 +112,25 @@ small{
     margin: 0px 10px 5px;
 }
 
+/* voor artiekels*/
+article pre {
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    overflow: hidden;
+}
+article p, article pre {
+    margin: 0px 75px;
+}
+footer{
+    display: block;
+    clear: both;
+    background-color: rgb(81, 79, 79);
+    padding: 5px;
+    font-size: 10px;
+}
+
 @media only screen and (max-width: 1200px){
     main {
         width: 90%;
@@ -131,15 +150,4 @@ small{
         margin: 10px 7.5% ; /* waar 7.5% weet ik niet */
         width: 80%;
     }
-}
-/* voor artiekels*/
-article pre {
-    text-align: left;
-    padding: 20px;
-    border: 1px solid #000;
-    border-radius: 10px;
-    overflow: hidden;
-}
-article p, article pre {
-    margin: 0px 75px;
 }

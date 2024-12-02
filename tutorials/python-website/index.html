@@ -20,11 +20,41 @@
     </nav>
 
     <article>
-        <h2>Website met Python</h2> <!-- Kop -->
+        <h1>Website met Python</h1> <!-- Kop -->
         <br> <!-- Nieuwe regel -->
 
         <!-- Stukje tekst -->
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim inventore eaque temporibus magnam non perferendis animi. Minus repellendus eius, odit cumque voluptates, inventore fugit amet dolores nam soluta odio modi?</p>
+        <p>In deze tutorial leer je hoe je een eenvoudige website kunt maken met Python en het Flask-framework. Flask is een micro-framework dat eenvoudig te begrijpen is, zelfs voor mensen zonder coderingservaring. We doorlopen stap voor stap het proces, zodat je een werkende website kunt creëren zonder dat je veel technische kennis nodig hebt.</p>
+        <br><br>
+        <h2>Wat is Flask?</h2>
+        <p>Flask is een lichtgewicht webframework voor Python. Het stelt je in staat om snel en eenvoudig een webapplicatie te bouwen. Omdat het zo simpel is, is het een perfecte keuze voor beginners die willen leren hoe ze websites kunnen maken zonder diepgaande kennis van webontwikkeling.</p>
+        <br><br>
+        <h2>Benodigdheden</h2>
+        <ul>
+            <li><span style="font-weight: bold;">Python:</span> Zorg ervoor dat je Python op je computer hebt geïnstalleerd. Je kunt het downloaden van de officiële website: <a href="https://www.python.org">python.org</a>.</li>
+            <li><span style="font-weight: bold;">Text editor:</span> Een editor zoals VSCode, Sublime Text, of zelfs de ingebouwde editor van Python, IDLE, is genoeg.</li>
+            <li><span style="font-weight: bold;">Flask:</span> We installeren Flask voor Python via de terminal of command prompt. Je kunt dit doen door de volgende opdracht uit te voeren:<br><br><img src="code1.png" width="256"></li>
+        </ul>
+        <br><br><br>
+        <h2>Stap 1: Maak een basis Flask project</h2>
+        <ol>
+            <li>Maak een nieuwe map waar je je websiteproject wilt opslaan. Noem deze bijvoorbeeld  <code>mijn_website</code></li>
+            <li>Maak een nieuw bestand met de naam <code>app.py</code> in de map <code>mijn_website</code>. Dit bestand bevat de code voor je website.</li>
+            <li>Open app.py en schrijf de volgende code:<br><br><img src="code2.png" width="512"></li>
+        </ol>
+        <br>
+        <h2>Wat gebeurt hier?</h2>
+        <ul>
+            <li>We importeren eerst de Flask module voor Python.</li>
+            <li>We maken een nieuwe Flask-applicatie aan met <code>Flask(__name__)</code>. Dit zorgt ervoor dat we de website kunnen gaan maken.</li>
+            <li>We stellen een route in, wat betekent dat we aangeven welke functie uitgevoerd moet worden wanneer een bepaalde URL wordt bezocht. In dit geval, wanneer de gebruiker naar de root (/) gaat, wordt de functie <code>home()</code> aangeroepen en tonen we de tekst <span style="font-style: italic;">"Welkom op mijn website!"</span>.</li>
+            <li>De code <code>app.run(debug=True)</code> zorgt ervoor dat de server in de ontwikkelmodus draait, zodat je wijzigingen snel kunt testen.</li>
+        </ul>
+        <br><br><br>
+        <h2>Stap 2: De website laten werken</h2>
+        <ul>
+            <li>Open de terminal (of command prompt) en navigeer naar je projectmap.<br>Voer dan het volgende commando uit om de server te starten:</li>
+        </ul>
     </article>
 </body>
 </html>

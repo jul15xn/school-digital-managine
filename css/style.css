@@ -151,3 +151,18 @@ footer{
         width: 80%;
     }
 }
+
+article code {
+    margin: 0px 3px;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+    padding: 1px 3px;
+}
+
+article ol li, article ul li {
+    margin-top: 10px;
+}
+
+article h1 {
+    font-size: 48px;
+}

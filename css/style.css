@@ -92,6 +92,9 @@ main#tutorial div{
     padding: 10px;
     color: black;
 }
+main#tutorial img{
+    height: 65%;
+}
 main div a{
     text-decoration: none;
 }

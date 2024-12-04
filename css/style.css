@@ -143,11 +143,18 @@ footer{
         width: calc(100% / 2 - 40px);
     }
 }
-
+@media only screen and (max-width: 910px){
+    main#tutorial img{
+        height: 60%;
+    }
+}
 @media only screen and (max-width: 600px){
     main{
         width: 90%;
         padding: 5px 0px 10px;
+    }
+    main#tutorial img{
+        height: 55%;
     }
     main div, main#tutorial div{
         margin: 10px 7.5% ; /* waar 7.5% weet ik niet */

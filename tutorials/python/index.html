@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python rekenmachine met UI</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <header>
+        <img src="../../img/freakers 1.png" alt=""><h1>Freakers</h1> <!--naam website-->
+    </header>
+    <nav class="navbar">
+       <ul> 
+           <li><a href="../../">home page</a></li>
+           <li><a href="../../tutorials/">tutorials</a></li>
+           <li><a href="../../artikelen/">magazines</a></li>
+           <!--<li><a href="test_page/">Royavistiq</a></li> -->
+       </ul>
+    </nav>
+
+    <article>
+        <h1>Python tutorial</h1> <!-- Kop -->
+        <hr>
+
+        <!-- Stukje tekst -->
+        <p>In deze tutorial leer je de basis van python. je leert variabelen, fucties, loops en nog meer.</p>
+        <br><br>
+        <h2>wat is python</h2>
+        <p>Python is een programmeertaal, gemaakt in 1991 door de Nederlander Guido van Rossum. Hij ontwierp het bij het CWI in Amsterdam, geïnspireerd door de eenvoud van de taal ABC. De naam komt van zijn liefde voor de komedieserie Monty Python. Python is populair door zijn eenvoudige, leesbare code en veel toepasingen, zoals webontwikkeling, data-analyse en AI.</p>
+        <br><br>
+        <h2>Benodigdheden:</h2>
+        <ul>
+            <li><span style="font-weight: bold;">Python:</span> Zorg ervoor dat je Python op je computer hebt geïnstalleerd. Je kunt het downloaden van de officiële website: <a href="https://www.python.org">python.org</a>.</li>
+            <li><span style="font-weight: bold;">Text editor:</span> Een editor zoals VSCode, Sublime Text, of zelfs de windows ingebouwde text editor kladblok kan je python code mee schrijven.</li>
+        </ul>
+        <br><br>
+        <h2>commentaar in python:</h2>
+        <p>commentaar in python doe je door een # neer te zetten en dan alles na de # in de code op dezelfde regel is commentaar.</p>
+        <br>
+        <h2>Variabelen:</h2>
+        <p>er zijn meerdere types variabelen in python, allemaal hebben ze een andere Functie en kan je er andere dingen mee.</p>
+        <p>Maar hoe maak je een variabel aan? Dat is in python heep makkelijk, typt de naam die je wilt dat de variabel heeft en dan geef je de variabel een waarde door gewoon = te typen en dan wat je wilt dat de waarde is, een voorbeeld is dit: <code>getal = 5</code>, python kiest dan automatisch welk type het variabel moet zijn, hier is de uitleg van een paar van de types variabelen:</p>
+        <ul>
+            <li><span style="font-weight: bold;">integer:</span>  integer zijn getallen die geen commagetal zijn, een integer maak je aan door de waarde van de variabel een getal te maken, een voorbeeld is dit: <code>getal = 5</code></li>
+            <li><span style="font-weight: bold;">float:</span>  floats zijn getallen dat wel commagetallen zijn, een float maak je aan door de waarde van de variabel een commagetal te maken, een voorbeeld is dit: <code>commagetal = 5.5</code>, een commagetal gebruikt een punt in plaats van een comma omdat comma's gebruikt wordt om waardes te schijden</li>
+            <li><span style="font-weight: bold;">string:</span>  een string is text, een string maak je aan door de waarde van de variabel in "" te zetten, een voorbeeld is dit: <br><code>text = "dit is een string"</code></li>
+            <li><span style="font-weight: bold;">boolean:</span>  een boolean is een waar of nietwaar, of dus in het engels een True of False, je maakt dan dus de waarde True of False, een voorbeeld is dit: <br><code>boolean = True</code></li>
+            <li><span style="font-weight: bold;">array:</span>  een array is een lijst met meerdere waardes van variabel er in, een array maak je aan door de waardes in [] te zetten, een voorbeeld is dit: <code> array = ["string", "string2"]</code>je schijdt de waardes met een comma, de waardes hoeven niet allemaal hetzelfde te zijn en een niet presee een string, je kan alle types variabelen er in zetten. een array kan je ook waardes van aflezen, dat doe je met de variabel en dan de index van het item dat je wilt aflezen, bijvorrbeeld <code>array[0]</code> hier lees je het eerste item af omdat een array bij 0 begint omdat een computer bij 0 begint met tellen, en een item weizigen werkt zo: <code>array[0] = 5</code>, hier maak je de eerste item 0.</li>
+        </ul>
+        <p>variabelen kan je ook van type veranderen door bijvoorbeeld dit te doen: <code>text = str(5)</code>, hier maak je dus de integer een string</p>
+        <br>
+        <h2>Functies:</h2>
+        <p>functies kan je uitvoeren door de naam van de functie op te schrijven en dan haakjes er achter, hier zijn voorbeelden van de basis functies:</p>
+        <h3>print:</h3>
+        <p>print kan je text laten zien in de terminal, dat is waar standaard al je output komt, print doe je zo: <br><code>print("deze text wordt nu geprint")</code>, je hebt ook variabelen printen door bijvoorbeeld dit te doen: <code>print(getal)</code>, als we eerder getal de waarde 5 hebben gegeven dan komt er nu dus 5 in de terminal te staan, je kan ook de uitkomst van berekeningen printen, dat ziet er zo uit in de code: <code>print(5 + 5)</code>, dit zal dus 10 printen. <br> door commas te gebruiken in je print kan je meerdere dingen printen, zoals dit: <code>print("5 + 5 =", 5 + 5)</code>, je kan ook + gebruiken in plaats van een comma maar dit zorg er dan dus voor dat er geen spatie tussen de verschilende dingen zit. je kan ook rekenen met strings, zoals dit: <code>print("hoi"*5)</code>, dit zal hoi 5 keer achter elkaar zetten, dus het zou dit printen <code>hoihoihoihoihoi</code>. je kan ook nog een "\" gebruiken in een print als je daar dan achter bijvoorbeeld een "n"zou zetten zou hey een nieuwe regel starten, dat print je dan zo: <code>print("dit is text\n en dit zou op de volgende regel staan")</code>je hebt ook nog een "\t" dit print een tab.</p>
+        <h3>input:</h3>
+        <p>met input() kan je input vragen aan de gebruiker, hier wacht dus het programma tot de gebruiker iets heeft ingevoerd, tussen de haakjes kan je ook wat vragen aan de gebruiken over wat je als input wilt, dit werkt hezelfde als bij print, hier is een voorbeeld: <code>user_input = input(voer hier een input in:\t)</code>, een input is altijd een string</p>
+        <h3>if en else</h3>
+        <p>if is niet heel moeilijk, een if doet iets als als iets waar is, dan heb je een elif(else if) dat doet iets als wat in de if stont niet waar is maar wat in de elif wel waar is, en je hebt een else, else doet iets als beide niet waar is, else een elif is niet verplicht, het ziet er zo uit:</p>
+        <img src="if-else-code.png" alt="if-else-code" height="250px">
+        <p>om vergelijkingen te doen in de if kan je al deze dingen doen:</p>
+        <ul>
+            <li><span style="font-weight: bold;">gelijk aan:</span> ==</li>
+            <li><span style="font-weight: bold;">griter dan:</span>></li>
+            <li><span style="font-weight: bold;">kleiner dan:</span><</li>
+            <li><span style="font-weight: bold;">groter of gelijk aan:</span>>=</li>
+            <li><span style="font-weight: bold;">kleiner of gelijk aan:</span><=</li>
+            <li><span style="font-weight: bold;">niet gelijk aan:</span>!=</li>
+        </ul>
+        <p>je kan ook meerdere vergelijkingen doen in 1 if, dat doe je met een <code>and</code> tussen de vergelijkingen te zetten, hier moeten bijde vergelijkingen waar zijn, je kan ook een <code>or</code>er tussen zetten, dan moet 1 van de 2(of meer) waar zijn. nadat je de vergelijking heb gedaan doe je een dubbele punt en dan een regel, lager doe je een tab en alles wat een tab naar rechts is dat wordt uitgevoerdt door de (el)if.</p>
+        <h3>loops:</h3>
+        <p>je hebt in python 2 soorten loops, een while loop en een for loop, ze loopen bijde maar beide doen ze we wat anders, hier is de uitleg voor beide:</p>
+        <ul>
+            <li><span style="font-weight: bold;">while loops:</span> een while loop herhaalt de code erin als de waarde waar is, het werkt eigenlijk als een if maar dan blijft het herhalen tot het niet meer waar is, en het heeft geen elif.</li>
+            <li><span style="font-weight: bold;">for loops:</span> for loops werken iets anders, for loops hebben een variabel er in en een andere variabel waar ze door heen gaan, de variabel in de for loop gaat veranderet elke keer naar de volgende waarde want een for loop gaat alleen door een array, maar in python is een string eigenlijk een array van letters en je can ook range gebruiken wat dan een array van gettallen maakt, dit is niet heel duidelijk maar hier zijn voorbeelden:</li>
+            <img src="for-loops-code.png" alt="for-loops-code" height="300px">
+        </ul>
+        <br>
+        <h2>Functies maken:</h2>
+        <p>een functie maken is eigenlijk een stuk code schrijven die je dan een naam geeft en dan later kan je die opvragen en dan voert python de code uit, je kan ook variabelen meegeven aan de functie, hier is een voorbeeld:</p>
+        <img src="def-code.png" alt="def-code" height="250px">
+        <p>aan deze functie wordt de text "Hello, World!" mee gegeven en deze functie print dan die text, deze functie is dus niet heel handig want het is eigenlijk print, maar functies kan je dus ook voor veel complextere dingen die je dan maar 1 keer hoeft te schrijven en dan later zo vaak als nodig kan uitvoeren.</p>
+    </article>
+    <footer>
+        <p class="Copyright">&copy; Copyright 2024 van Joran Nap</p>  <!--copyright laten zien-->
+    </footer>
+</body>
+</html>

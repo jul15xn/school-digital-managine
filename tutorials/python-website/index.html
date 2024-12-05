@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <img src="../../img/freakers 1.png" alt=""><h1>Freakers</h1> <!--naam website-->
+        <br><img src="../../img/freakers 1.png" alt=""><h1>Freakers</h1> <!--naam website-->
     </header>
     <nav class="navbar">
        <ul> 
@@ -24,7 +24,7 @@
         <h2>Inleiding</h2>
         <p>In deze tutorial ga je een simpele website maken met behulp van Flask, een populaire webframework in Python. Flask is een goede keuze voor beginners omdat het heel eenvoudig is en je snel kunt leren hoe je een website bouwt. Of je nu een hobbyist bent die nieuwsgierig is naar webontwikkeling of iemand die een webproject wil starten, deze tutorial is voor jou.</p>
         <p>We gaan stap voor stap door het proces, zodat je begrijpt wat je doet en waarom. Aan het einde van deze tutorial kun je je eigen website draaien op je computer! Dus, open je teksteditor en laten we beginnen!</p>
-
+        <br><br><br>
         <h2>Wat heb je nodig?</h2>
         <p>Voordat we starten, moet je ervoor zorgen dat je een paar dingen hebt geïnstalleerd:</p>
         <ol>
@@ -32,31 +32,23 @@
             <li><strong>Flask:</strong> Dit is het framework waarmee we de website gaan bouwen. We installeren het later via de terminal.</li>
         </ol>
         <p>Zodra je Python hebt geïnstalleerd, ben je klaar om aan de slag te gaan. Laten we nu beginnen!</p>
-
+        <br><br><br>
         <h2>Stap 1: Installeren van Flask</h2>
         <p>Flask is een extensie voor Python die we moeten installeren. Om dat te doen, openen we de terminal of command prompt op je computer.</p>
         <p>Typ het volgende commando om Flask te installeren:</p>
-        <pre><code>pip install Flask</code></pre>
+        <br><img src="install.png", width="250"><br><br>
         <p>Druk op Enter. Dit zal Flask downloaden en installeren. Wanneer het installeren klaar is, kun je verdergaan naar de volgende stap.</p>
-
+        <br><br><br>
         <h2>Stap 2: Maak een nieuwe map voor je project</h2>
         <p>Het is altijd een goed idee om je werk netjes te organiseren. Maak een nieuwe map op je computer voor je project. Noem de map bijvoorbeeld <code>mijn_flask_website</code>. Dit maakt het makkelijker om al je bestanden te vinden.</p>
         <p>Binnen de map maken we een Python bestand waar we onze code gaan schrijven. Open een teksteditor (zoals <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>, <a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a> of een andere editor naar keuze) en maak een nieuw bestand met de naam <code>app.py</code>.</p>
-
+        <br><br><br>
         <h2>Stap 3: Schrijf je eerste Flask-app</h2>
         <p>In het nieuwe bestand <code>app.py</code> gaan we de basis van de website schrijven. Dit doen we door Flask te importeren en een eenvoudige route in te stellen.</p>
         <h3>Wat is een route?</h3>
         <p>In webontwikkeling is een route een pad of URL die een gebruiker bezoekt op je website. Wanneer een gebruiker bijvoorbeeld naar <code>http://localhost:5000</code> gaat, zal de website iets teruggeven, zoals een pagina met tekst.</p>
         <p>Laten we nu de volgende code schrijven in <code>app.py</code>:</p>
-        <pre><code>from flask import Flask
-
-app = Flask(__name__)
-
-@app.route('/')
-def home():
-    return 'Welkom op mijn eerste Flask-website!'
-
-app.run(debug=True)</code></pre>
+        <br><img src="flask1.png" width="512"><br><br>
 
         <h4>Uitleg van de code:</h4>
         <ul>
@@ -66,66 +58,34 @@ app.run(debug=True)</code></pre>
             <li><code>def home():</code>: Dit is de functie die wordt uitgevoerd wanneer iemand naar de hoofdpagina navigeert. In dit geval retourneert het een simpel bericht: "Welkom op mijn eerste Flask-website!".</li>
             <li><code>app.run(debug=True):</code> Dit start de Flask-server. Hij wordt ook gestart in debug modus, zodat je snel fouten kunt oplossen (als die er zijn).</li>
         </ul>
-
+        <br><br><br>
         <h2>Stap 4: De website draaien</h2>
         <p>Nu we de basis van de website hebben geschreven, kunnen we de app uitvoeren. Ga terug naar de terminal, navigeer naar de map waar je <code>app.py</code> hebt opgeslagen, en typ het volgende commando:</p>
-        <pre><code>python app.py</code></pre>
+        <br><img src="python.png" width="256"><br><br>
         <p>Je zou een bericht moeten zien waarin staat dat de server opgestart is, bijvoorbeeld:</p>
-        <pre><code>* Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)</code></pre>
+        <br><img src="running.png" width="512"><br><br>
         <p>Dit betekent dat je website nu actief is op <code>http://127.0.0.1:5000/</code>. Open een browser en ga naar dat adres. Je zou de tekst "Welkom op mijn eerste Flask-website!" moeten zien.</p>
-
+        <br><br><br>
         <h2>Stap 5: Een HTML-pagina toevoegen</h2>
         <p>Nu willen we de simpele tekst vervangen door een echte webpagina. Maak een nieuwe map genaamd <code>templates</code> in je projectmap. Flask zoekt automatisch naar HTML-bestanden in deze map en hierdoor kan je deze gebruiken voor je website.</p>
         <p>Maak een bestand genaamd <code>index.html</code> in de <code>templates</code>-map met de volgende code:</p>
-        <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="nl"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;Mijn Flask Website&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;Welkom op mijn Flask Website!&lt;/h1&gt;
-    &lt;p&gt;Dit is de startpagina van mijn eerste Flask-webapplicatie.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
+        <br><img src="html1.png" width="612"><br><br>
 
         <p>Nu moeten we de Python-code aanpassen om deze HTML-pagina te laten zien in plaats van de tekst. Wijzig de <code>home</code> functie in je <code>app.py</code> bestand als volgt:</p>
-        <pre><code>from flask import Flask, render_template
-
-app = Flask(__name__)
-
-@app.route('/')
-def home():
-    return render_template('index.html')
-
-app.run(debug=True)</code></pre>
-
+        <br><img src="flask2.png" width="512"><br><br>
+        <br><br><br>
         <h2>Stap 6: De website vernieuwen</h2>
         <p>Sla je bestanden op en ga terug naar je terminal. Stop de server door CTRL+C in te drukken en start de server opnieuw:</p>
-        <pre><code>python app.py</code></pre>
+        <br><img src="running.png" width="512"><br><br>
         <p>Als je nu je website vernieuwt, zou je de HTML-pagina moeten zien die je hebt gemaakt. De tekst "Welkom op mijn Flask Website!" en de paragraaf "Dit is de startpagina van mijn eerste Flask-webapplicatie." zouden zichtbaar moeten zijn.</p>
-
+        <br><br><br>
         <h2>Stap 7: Meer pagina's toevoegen</h2>
         <p>Nu je een werkende website hebt, kun je gemakkelijk meer pagina's toevoegen. Maak bijvoorbeeld een nieuwe HTML-pagina genaamd <code>over.html</code> en voeg een nieuwe route toe in <code>app.py</code>:</p>
-        <pre><code>@app.route('/over')
-def over():
-    return render_template('over.html')</code></pre>
+        <br><img src="over.png" width="512"><br><br>
 
         <h3>De code voor over.html zou iets kunnen zijn zoals:</h3>
-        <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="nl"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;Over Mij&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;Over Mij&lt;/h1&gt;
-    &lt;p&gt;Dit is een voorbeeld van de over-pagina.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-
+        <br><img src="overmij.png" width="612"><br><br>
+        <br><br><br>
         <h2>Conclusie</h2>
         <p>Gefeliciteerd! Je hebt nu een eenvoudige website gebouwd met Flask! Je hebt geleerd hoe je een server opzet, routes toevoegt en HTML-pagina's weergeeft.</p>
         <p>Er is nog veel meer mogelijk met Flask, zoals het werken met formulieren, databases, en nog veel meer. Maar dit is een geweldige basis om mee te beginnen!</p>

@@ -93,7 +93,7 @@ main#tutorial div{
     padding: 10px;
     color: black;
 }
-main#tutorial img{
+main#tutorial img, main#artieklen img{
     height: 65%;
 }
 main div a{
@@ -145,7 +145,7 @@ footer{
     }
 }
 @media only screen and (max-width: 910px){
-    main#tutorial img{
+    main#tutorial img, main#artieklen img{
         height: 60%;
     }
 }
@@ -154,7 +154,7 @@ footer{
         width: 90%;
         padding: 5px 0px 10px;
     }
-    main#tutorial img{
+    main#tutorial img, main#artieklen img{
         height: 55%;
     }
     main div, main#tutorial div{

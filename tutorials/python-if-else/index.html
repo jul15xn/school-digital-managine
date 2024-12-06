@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python tutorial</title>
+    <link rel="icon" href="../../img/freakers 1.png">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <header>
+        <a href="../"><img src="../../img/freakers 1.png" alt=""></a>
+        <h1>Freakers</h1> <!--naam website-->
+    </header>
+    <nav class="navbar">
+       <ul> 
+           <li><a href="../">home page</a></li>
+           <li><a href="../../tutorials/">tutorials</a></li>
+           <li><a href="..././artikelen/">artikelen</a></li>
+           <!--<li><a href="test_page/">Royavistiq</a></li> -->
+       </ul>
+    </nav>
+ 
+    <article>
+        <h1>Python tutorial</h1> <!-- Kop -->
+        <hr>
+ 
+        <!-- Stukje tekst -->
+        <p>Python Tutorial: Vraag hoe iemand heet en geef een reactie met if-else</p>
+        <br><br>
+        <h2>Wat is python</h2>
+        <p>Python is een van de populairste programmeertalen (voor beginners) die wereldwijd gebruikt wordt. Het heeft een eenvoudige en leesbare structuur, wat het ideaal maakt voor beginners. In deze tutorial gaan we gebruik maken van de basis van python om een programma te schrijven dat de gebruiker vraagt om zijn naam en een antwoord genereert.
+                input(): Deze functie wordt gebruikt om gegevens van de gebruiker te ontvangen. Het geeft altijd een tekst (string) terug.
+                print(): Deze functie wordt gebruikt om tekst of resultaten weer te geven op het scherm.
+                if-else: Deze structuur maakt het mogelijk om verschillende acties uit te voeren afhankelijk van een voorwaarde. Als de voorwaarde waar is, wordt de if-blok uitgevoerd, anders wordt de else-blok uitgevoerd. </p>
+           
+        <br><br>
+        <h2>basiscode</h2>
+        <p>De basiscode
+            Open een teksteditor (bijvoorbeeld Visual Studio Code of IDLE, de standaardeditor van Python) en maak een nieuw bestand aan. Noem het bijvoorbeeld naam_vragen.py. Plak de volgende code in het bestand:
+           
+            # Vraag de naam van de gebruiker
+            naam = input("Hoe heet je? ")
+           
+            # Controleer de naam en geef een reactie
+            if naam == "Alice":
+                print("Hallo Alice! Leuk je te ontmoeten!")
+            else:
+                print(f"Hallo {naam}! Leuk je te ontmoeten!")
+            Laten we nu stap voor stap door de code gaan om te begrijpen wat elke lijn doet.
+            </p>
+        <ul>
+        <p>1.   Vraag naar de naam:
+                De functie input("Hoe heet je? ") vraagt de gebruiker om zijn/haar naam in te voeren. De tekst "Hoe heet je?" is de vraag die in de terminal of het scherm verschijnt.
+                Wat de gebruiker ook invoert, wordt opgeslagen in de variabele naam. Dit betekent dat de waarde van naam een tekst (string) is, bijvoorbeeld "Alice" of "Bob".
+            2.  Gebruik van if-else:
+                De if-voorwaarde controleert of de waarde van de variabele naam gelijk is aan "Alice". Dit gebeurt met de vergelijking naam == "Alice". Let op de dubbele gelijkteken (==), wat een vergelijking is en geen toewijzing.
+                Als de naam van de gebruiker inderdaad "Alice" is, wordt de code in de if-sectie uitgevoerd: print("Hallo Alice! Leuk je te ontmoeten!").
+                Als de naam iets anders is dan "Alice", wordt de code in de else-sectie uitgevoerd, die een bericht toont met de naam die de gebruiker heeft ingevoerd, zoals bijvoorbeeld "Hallo Bob! Leuk je te ontmoeten!". Dit gebeurt met de regel print(f"Hallo {naam}! Leuk je te ontmoeten!").
+            3.  Afdrukken van het bericht:
+                De functie print() toont het bericht in de terminal of op het scherm. In de else-sectie wordt gebruik gemaakt van een f-string (f"...") om de naam van de gebruiker in de tekst te plaatsen. Dit is een eenvoudige manier om variabelen in strings te verwerken.</p>
+        <br><br>
+        <h2>hoe voer je de code uit</h2>
+        <p>1.   Sla de code op:
+                Sla het bestand op met de naam naam_vragen.py op je computer.
+            2.  Open de terminal:
+            Open de terminal (op Windows is dit de Opdrachtprompt, op MacOS of Linux de Terminal).
+            3.  Navigeer naar je bestand:
+            Gebruik de opdracht cd (change directory) om naar de map te navigeren waar je het bestand hebt opgeslagen.</p>
+           
+        <br>
+        <h2>Testen</h2>
+        <p>5.   Testen:
+            Als je "Alice" typt, krijg je het bericht "Hallo Alice! Leuk je te ontmoeten!".
+            Als je iets anders typt, zoals "Bob", krijg je "Hallo Bob! Leuk je te ontmoeten!".
+            </p>
+       
+        <p>
+             Variaties en Aanpassingen
+            Nu je dit basisprogramma hebt geschreven, kun je het uitbreiden en aanpassen om meer functies toe te voegen:
+            1.  Meer namen toevoegen:
+            Je kunt meerdere if-elif-else-blokken toevoegen om verschillende reacties te tonen voor verschillende namen.
+            Bijvoorbeeld:
+            python
+            if naam == "Alice":
+                print("Hallo Alice! Leuk je te ontmoeten!")
+            elif naam == "Bob":
+                print("Hallo Bob! Hoe gaat het?")
+            else:
+                print(f"Hallo {naam}! Welkom!")
+            2.  Vragen naar de leeftijd:
+            Voeg een extra vraag toe om de leeftijd van de gebruiker te vragen en geef een bericht afhankelijk van de leeftijd.
+            Bijvoorbeeld:
+            leeftijd = int(input("Hoe oud ben je? "))
+            if leeftijd < 18:
+                print("Je bent jong")
+            else:
+                print("Je bent volwassen") </p>
+ 
+        <p> Conclusie
+            Je hebt nu een eenvoudige Python-programma gemaakt dat de naam van de gebruiker vraagt en een reactie “print”. Dit programma is een uitstekende manier om te oefenen met de basis van Python, zoals input, output, if-else en variabelen. Na het voltooien van deze tutorial heb je geleerd hoe je een programma kunt maken dat reageert op de invoer van de gebruiker.
+           <br>
+            Het mooie van Python is dat je snel kunt beginnen en eenvoudig kunt uitbreiden. Dus wees niet bang om te experimenteren met nieuwe ideeën en functies om je programma te verbeteren!
+            </p>
+           
+        </article>
+    </ul>
+     
+    </article>
+    <footer>
+        <p class="Copyright">&copy; Copyright 2024 van Charafdoen Yarjallah</p>  <!--copyright laten zien-->
+    </footer>
+</body>
+</html>
